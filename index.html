@@ -19,11 +19,11 @@
         <header>
             <img src="./logo.png" alt="company logo">
             <nav id="navbar">
-                <a href="#" target="_self">Home</a>
-                <a href="#" target="_self">Tracks</a>
-                <a href="#" target="_self">Library</a>
-                <a href="#" target="_self">Community</a>
-                <a href="#" target="_self">Sing In</a>
+                <a class="selected" href="#" target="_self">Home</a>
+                <a class="selected" href="#" target="_self">Tracks</a>
+                <a class="selected" href="#" target="_self">Library</a>
+                <a class="selected" href="#" target="_self">Community</a>
+                <a class="selected" href="#" target="_self">Sign In</a>
             </nav>
         </header>
         
@@ -36,6 +36,27 @@
             <img src="./sadFace.png" width=100% alt="Sad face of a green thing">
         </div>
     </div>
-    
+    <script>
+        const buttons = [...document.querySelectorAll('#navbar a')];
+        buttons.forEach(btn => {
+            btn.addEventListener('mouseover', borderDark);
+            btn.addEventListener('mouseout', borderLight);
+            if(btn.textContent == "Sign In") {
+                btn.style.borderColor = "#9E9E9E";
+            }
+        });
+        // buttons.forEach(btn => {
+        //     btn.addEventListener('mouseout', borderLight);
+        // });
+        
+        function borderDark() {
+            this.style.borderColor = "#9E9E9E";
+        }
+        function borderLight() {
+            // console.log(this.textContent);
+            this.style.borderColor = this.textContent != "Sign In" ? "#FFF" : "#9E9E9E";
+        }
+        // console.log(buttons);
+    </script>
 </body>
 </html>

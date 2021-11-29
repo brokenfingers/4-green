@@ -5,21 +5,48 @@ html{
 }
 
 header {
+    width: 100%;
     margin-bottom: 100px;
-    background-color: aqua;
+    
+    display: inline-block;
+    height: 100px;
 }
+header img {
+    margin: 10px;
+}
+
+.selected {
+    border-radius: 12px;
+    border-color: #FFF;
+    border-style: solid;
+}
+
 #navbar {
+    margin-top:  50px;
     float:right;
     word-spacing: 10px;
-    height: 100%;
+    height: 100Vh;
 }
 
 #navbar a{
+    margin-top: 15px;
+    padding: 2px 20px;
     text-decoration: none;
     color: #9E9E9E;
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+    
 
+}
+h1 {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 25px;
 }
 
 #mainContainer {
@@ -27,6 +54,8 @@ header {
     margin-left: calc((100% - 800px) / 2);
     background-color: #fff;
     height: 100vh;
+    font-family: 'Trebuchet MS', 'Bahnschrift', 'MS PGothic';
+    color: #9E9E9E;
 }
 
 #leftContainer{
