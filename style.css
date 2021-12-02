@@ -4,10 +4,14 @@ html{
     padding: 0;
 }
 
+body {
+    background-color: #F8F8F8;
+}
+
 header {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 100px;
+    
     
     display: inline-block;
    
@@ -66,7 +70,7 @@ p{
     display: inline-block;
     width: 800px; 
     margin-left: calc((100% - 800px) / 2);
-    background-color: #fff;
+   
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #9E9E9E;
@@ -75,11 +79,15 @@ p{
 section {
     width: 100%;
     display: inline-block;
+    margin-top: 30px;
 }
 
 #leftContainer{
-    width: 46%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
     float: left;
+    margin-top: 35px;
 }
 
 #leftContainer p {
@@ -87,6 +95,8 @@ section {
 }
 
 #rightContainer{
-    width: 46%;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
     float: right;
 }
