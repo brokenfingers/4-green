@@ -6,36 +6,34 @@ html{
 
 header {
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 100px;
     
     display: inline-block;
-    height: 100px;
-}
-header img {
-    margin: 10px;
+   
 }
 
-.selected {
-    border-radius: 12px;
-    border-color: #FFF;
-    border-style: solid;
+header img {
+    height: 50px;
 }
+
+
+
 
 #navbar {
-    margin-top:  50px;
     float:right;
-    word-spacing: 10px;
-    height: 100Vh;
+    margin-top: 15px;
+    
 }
 
 #navbar a{
-    margin-top: 15px;
-    padding: 2px 20px;
+    
     text-decoration: none;
     color: #9E9E9E;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     
+    line-height: 20px;
     
 
 }
@@ -62,6 +60,11 @@ p{
     width: 50%;
     float: left;
 }
+
+#leftContainer p {
+    margin: 0;
+}
+
 #rightContainer{
     width: 50%;
     float: left;
