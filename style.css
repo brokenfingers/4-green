@@ -24,19 +24,34 @@ header img {
     float:right;
     margin-top: 15px;
     
+    
+}
+#navbar a:hover {
+    text-decoration: underline;
+    color:#85bf66;
 }
 
 #navbar a{
     
     text-decoration: none;
     color: #9E9E9E;
-    font-size: 20px;
-    font-weight: bold;
-    
-    line-height: 20px;
+    font-size: 17px;
+   
+    line-height: 17px;
     
 
 }
+
+a+a {
+    margin-left: 35px;
+}
+
+
+
+#navbar a:first-child{
+    margin-left: 0;
+}
+
 h1 {
     font-size: 100px;
     margin: 0;
@@ -48,16 +63,22 @@ p{
 }
 
 #mainContainer {
+    display: inline-block;
     width: 800px; 
     margin-left: calc((100% - 800px) / 2);
     background-color: #fff;
     height: 100vh;
-    font-family: 'Trebuchet MS', 'Bahnschrift', 'MS PGothic';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #9E9E9E;
 }
 
+section {
+    width: 100%;
+    display: inline-block;
+}
+
 #leftContainer{
-    width: 50%;
+    width: 46%;
     float: left;
 }
 
@@ -66,6 +87,6 @@ p{
 }
 
 #rightContainer{
-    width: 50%;
-    float: left;
+    width: 46%;
+    float: right;
 }
